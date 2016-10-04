@@ -1,0 +1,466 @@
+<title>CEK STOK</title>
+<!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
+  <link rel="stylesheet" href="http://mstok.bandros.co.id/assets/css/normalize.css" />
+  <link rel="stylesheet" href="http://mstok.bandros.co.id/assets/css/foundation.css" />
+
+  <!-- Fonts Option -->
+  <link rel="stylesheet" href="http://mstok.bandros.co.id/assets/css/open_sans.css"> 
+  <link rel="stylesheet" href="http://mstok.bandros.co.id/assets/css/foundation-icons.css"> 
+	
+	<!-- If you are using the gem version, you need this only -->
+  <link rel="stylesheet" href="http://mstok.bandros.co.id/assets/css/app.css"> 
+  <link rel="stylesheet" href="http://mstok.bandros.co.id/assets/css/morris.css"> 
+	<link rel="stylesheet" href="http://mstok.bandros.co.id/assets/css/dataTables.foundation.css">
+	<link rel="stylesheet" href="http://mstok.bandros.co.id/assets/css/foundation-datepicker.css">
+	<link rel="stylesheet" href="http://mstok.bandros.co.id/assets/css/nprogress.css">
+	<link rel="stylesheet" href="http://mstok.bandros.co.id/assets/css/owl.carousel.css">
+	<link rel="stylesheet" href="http://mstok.bandros.co.id/assets/css/owl.theme.css">
+	<link rel="stylesheet" href="http://mstok.bandros.co.id/assets/css/owl.transitions.css">
+  <script src="http://mstok.bandros.co.id/assets/js/vendor/modernizr.js"></script>
+  <style>
+  
+
+#custom-search-input {
+        margin:0;
+        margin-top: 10px;
+        padding: 0;
+    }
+ 
+    #custom-search-input .search-query {
+        padding-right: 3px;
+        padding-right: 4px \9;
+        padding-left: 3px;
+        padding-left: 4px \9;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+ 
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+ 
+    #custom-search-input button {
+        border: 0;
+        background: none;
+        /** belows styles are working good */
+        padding: 2px 5px;
+        margin-top: 2px;
+        position: relative;
+        left: -28px;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        color:#D9230F;
+    }
+ 
+    .search-query:focus + button {
+        z-index: 3;   
+    }
+
+  </style>
+	
+</head>
+
+<body>
+<div class="container ">	
+	<!--//contain row after container//-->
+  <div class="row">
+		<!--//container main //-->
+		<div class="large-12 columns ">
+			<div class="row">
+				<div class="large-offset-5 large-2 medium-offset-4 medium-4 small-offset-4 small-4 columns ">
+					<br />
+				</div>
+	
+				<div class="large-offset-3 large-6 medium-offset-3 medium-6 small-offset-1 small-10 column search_header end">
+					<br />
+				<form id="fsearch" name="fsearch" method="post" action="/">
+					<div class="row collapse">
+						<div class="small-10 columns">
+							<input id="isearch" name="search" type="text" placeholder="Pencarian" class="input">
+						</div>
+						<div class="small-2 columns">
+							<a id="asearch" href="#" class="button postfix success">GO</a>
+						</div>
+					</div>
+				</form>
+				</div>
+				<!--<div class="large-3 columns" style="padding-top:0px;">
+					&nbsp;
+				</div>-->
+			</div>
+		</div>
+		
+	</div>
+	<div class="row fullWidth">
+	
+		<div class="row">
+			<div class="large-12 column">
+				<hr />
+			</div>
+		</div>
+		
+		<div id="" class="row" style="min-height:19em;">
+			<div id="flexible_content_cjr" class="row" style=""></div>
+			<div id="flexible_content_rnd" class="row" style=""></div>
+			<div id="flexible_content_bla" class="row" style=""></div>		
+			<div id="flexible_content_inf" class="row" style=""></div>		
+			<div id="flexible_content_eve" class="row" style=""></div>
+			<div id="flexible_content_hrcn" class="row" style=""></div>
+			<div id="flexible_content_trekking" class="row" style=""></div>
+			<div id="flexible_content_ctz" class="row" style=""></div>
+			<div id="flexible_content_jkc" class="row" style=""></div>
+			<div id="flexible_content_ammar" class="row" style=""></div>
+		</div>
+		<footer class="row">
+			<div class="large-12 column ">
+				<p style="font-size:smaller; text-align:center;">Copyright &copy; 2016.</p>
+			</div>
+		</footer>
+	</div>
+</div><script src="http://mstok.bandros.co.id/assets/js/vendor/jquery.js"></script>
+<script src="http://mstok.bandros.co.id/assets/js/foundation.min.js"></script>
+<script src="http://mstok.bandros.co.id/assets/js/vendor/nprogress.js"></script> 
+<script src="http://mstok.bandros.co.id/assets/js/vendor/owl.carousel.js"></script> 
+<script src="http://mstok.bandros.co.id/assets/js/vendor/jquery.lazyload.js"></script> 
+<script src="http://mstok.bandros.co.id/assets/js/vendor/jquery.timeago.js"></script> 
+<script>
+$(document).foundation();
+Foundation.utils.image_loaded($('img'), function(){
+	
+});
+$(function() {
+});
+window.onbeforeunload = function() {
+	NProgress.start();
+	setTimeout(function() { NProgress.set(0.28); }, 1533);
+	setTimeout(function() { NProgress.set(0.53); }, 2167);
+	setTimeout(function() { NProgress.set(0.673); }, 2667);
+};
+$(function() {
+    $("img.lazy").lazyload({
+        event : "sporty"
+    });
+});
+
+$(window).bind("load", function() {
+    var timeout = setTimeout(function() {
+        $("img.lazy").trigger("sporty")
+    }, 5000);
+});
+$(document).ready(function() {
+  $("#owl-filman").owlCarousel({
+      autoPlay : 5000,
+			navigation : false, // Show next and prev buttons
+      slideSpeed : 3000,
+      paginationSpeed : 1333,
+			transitionStyle:"fade",
+			rewindNav:true,
+      singleItem:false
+ 
+      // "singleItem:true" is a shortcut for:
+      // items : 1, 
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
+ 
+  });
+	$("#owl-header").owlCarousel({
+ 
+      autoPlay : 5000,
+			navigation : false, // Show next and prev buttons
+      slideSpeed : 3000,
+      paginationSpeed : 1333,
+			transitionStyle:"fade",
+			rewindNav:false,
+      singleItem:true
+ 
+      // "singleItem:true" is a shortcut for:
+      // items : 1, 
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
+ 
+  });
+	function productStock(stok){
+		if(stok.length<1){
+			return '';
+		}
+		var h = '<div style="margin: 1em 0em;">';
+		$.each(stok,function(idx,val){
+			h += '<table id="tstok" style="width: 100%;">';
+			h +='<thead>';
+			h +='<tr>';
+			h +='<th colspan="2">Stok '+val.ukuran+'</th>';
+			h +='<td style="text-align:right;">'+val.stok+' Pcs</td>';
+			h +='</tr>';
+			h +='</thead>';
+			h +='<tbody style="">';
+			h +='<tr>';
+			//h +='<th>Pesanan</th>';
+			//h +='<td>:</td>';
+			//h +='<td>'+val.pesanan+'</td>';
+			h +='</tr>';
+			h +='<tr>';
+			h +='<th>Update</th>';
+			h +='<td>:</td>';
+			var d = new Date(val.last_update);
+			
+			var z = ""+d.getDate();
+			if(z.length==1) z="0"+z;
+			
+			var m = ""+d.getMonth();
+			if(m.length==1) m="0"+m;
+			
+			var p = ""+d.getHours();
+			if(p.length==1) p="0"+p;
+			
+			var s = ""+d.getMinutes();
+			if(s.length==1) s="0"+s;
+			
+			dt = d.getFullYear()+"-"+m+"-"+z+" "+p+":"+s+":00";
+			//console.log("dt: "+dt);
+			//h +='<td><time class="timeago" datetime="'+dt+'"></span></td>';
+			h +='<td>'+val.last_update+'</td>';
+			h +='</tr>';
+			h +='</tbody>';
+			h += '</table>';
+		});
+		h += '</div>';
+		return h;
+	}
+	function productList(iurl,kode,warna,bahan,berat,stok){
+		irul = iurl.replace(/ /g,"%20");
+		var h ='';
+		h +='<div class="row" style="padding: 3em;">';
+		h += '<div class="columns large-6 medium-6" style=" background: #F9F9F9;">';
+		h += '<div class="row">';
+		h += '<div class="columns" syle="">';
+		h += '<img srcx="http://mstok.bandros.co.id/assets/images/preloader.gif" src="'+iurl+'" data-original="'+iurl+'" class="mls" style="margin: 1em 0em; height: 18.75em; width: auto; background-image:url(\''+iurl+'\');background-size:cover; background-position: center center;" />';
+		h += '<table style="width: 100%;">';
+		h += '<tr><th>Kode</th><td>:</td><td>'+kode+'</td></tr>';
+		//h += '<tr><th>Warna</th><td>:</td><td>'+warna+'</td></tr>';
+		//h += '<tr><th>Bahan</th><td>:</td><td>'+bahan+'</td></tr>';
+		//h += '<tr><th>Berat</th><td>:</td><td>'+berat+'</td></tr>';
+		h += '</table>';
+		h += '</div>';
+		h += '</div>';
+		h += '</div>';//end of col lar6
+		h += '<div class="columns large-6 medium-6 end" style=" background: #F9F9F9;">';
+		h += '<div class="row">';
+		h += '<div class="columns">';
+		h += productStock(stok);
+		h += '</div>';
+		h += '</div>';
+		h += '</div>';//end of col lar6
+		h += '</div>';
+		return h;
+	}
+	function empti(){
+		var h = '<div class="row" style="padding: 3em;">';
+		h += '<div class="columns large-3 medium-6" style=" background: #F9F9F9;">';
+		h += '<div class="row">';
+		h += '<div class="columns" syle="">';
+		h += '<h3 style="text-align: center;">Tidak Ditemukan, gunakan kata yang lain?</h3>';
+		h += '</div>';
+		h += '</div>';
+		h += '</div>';//end of col lar6
+		h += '</div>';
+		return h;
+	}
+	function doSearchCst(cst){
+		NProgress.start();
+		var x = $("#isearch").val();
+		if(x.length<=2){
+			NProgress.done();
+			return false;
+		}
+		$("#flexible_content_"+cst).slideUp("slow");
+		var url = 'http://bandros.id/stok_api/';
+		if(cst=="cjr"){
+			url += 'cjr.php?kode=';
+		}else if(cst=="rnd"){
+			url += 'raindoz.php?kode=';
+		}else if(cst=="bla"){
+			url += 'blackkelly.php?kode=';
+		}else if(cst=="inf"){
+			url += 'inficlo.php?kode=';
+		}else if(cst=="eve"){
+			url += 'cbdyt/everflow?kode=';
+		}else if(cst=="hrcn"){
+			url += 'cbdyt/hrcn_tdlr?kode=';
+		}else if(cst=="trekking"){
+			url += 'cbdyt/trekking?kode=';
+		}else if(cst=="ctz"){
+			url += 'catenzo.php?kode=';
+		}else if(cst=="jkc"){
+			url += 'jk.php?kode=';
+		}else if(cst=="ammar"){
+			url += 'cbdyt/ammarkids?kode=';
+		}else{
+			url += 'catenzo.php?kode=';
+		}
+		url = url+encodeURIComponent(x);
+		console.log("cst: "+cst);
+		console.log(url);
+		$.ajax({
+			url: url,
+			type: 'GET',
+			dataType: 'json',
+		}).done(function(d){
+			$("#flexible_content_"+cst).empty();
+			var h = '';
+			console.log("cst: "+cst, url, typeof d, d);
+			if(cst=="eve" || cst=="inf" || cst=="bla" || cst=="cjr" || cst=="hrcn"  || cst=="trekking"  || cst=="jkc"  || cst=="ctnz"  || cst=="rnd"  ){
+				//d = jQuery.parseJSON(d);
+			}
+			//if(d.error == 0 || d.result != null || d.result !== undefined ){
+			if(d.error == 0 || d.error != 1 ){
+				if(d.result.length>0){
+					h += '<div class="row">';
+					$.each(d.result,function(idx,val){
+						console.log("val image INF = "+val.image_url);
+						h += '<div class="columns large-6">';
+						h += productList(val.image_url,val.kode,val.warna,val.bahan,val.berat,val.stok);
+						h += '</div>';
+					});
+					h += '</div>';
+				}else{
+					//h+=empti();
+				}
+			}else{
+				//h+=empti();
+			}
+			console.log("el: "+"#flexible_content_"+cst);
+			$("#flexible_content_"+cst).html(h);
+			$("#flexible_content_"+cst).slideDown();
+			jQuery("time.timeago").timeago();
+			//$("table#tstok").delegate("thead","tap click",function(e){
+				//e.preventDefault();
+				//$(this).parent().find("tbody").slideToggle("slow", function() {
+					// Animation complete.
+				//});
+			//});
+			
+			$("img.mls").lazyload({
+					event : "sporty"
+			});
+			NProgress.done();
+		});
+	}
+	
+	function doSearchxx(){
+		var x = $("#isearch").val();
+		if(x.length<=2){
+			NProgress.done();
+			return false;
+		}
+		var cst = 'ctz';
+		var cst = $("#sbrand option:selected").val();
+		doSearchCst(cst);
+	}
+	function doSearch(){
+		var x = $("#isearch").val();
+		if(x.length<=2){
+			NProgress.done();
+			return false;
+		}
+		var cst = 'cjr';
+		doSearchCst(cst);
+		
+		var cst = 'rnd';
+		doSearchCst(cst);
+		
+		var cst = 'bla';
+		//setTimeout(function() { doSearchCst("bla"); }, 4533);
+		doSearchCst(cst);
+		
+		var cst = 'inf';
+		//setTimeout(function() { doSearchCst("inf"); }, 2533);
+		doSearchCst(cst);
+		
+		var cst = 'eve';
+		//setTimeout(function() { doSearchCst("eve"); }, 6533);
+		doSearchCst(cst);
+		
+		var cst = 'hrcn';
+		doSearchCst(cst);
+		
+		var cst = 'trekking';
+		doSearchCst(cst);
+		
+		var cst = 'ctz';
+		doSearchCst(cst);
+		
+		var cst = 'jkc';
+		doSearchCst(cst);
+		
+		var cst = 'ammar';
+		doSearchCst(cst);
+	
+		
+		//var cst = $("#sbrand option:selected").val();
+	}
+	function doSearchx(){
+		NProgress.start();
+		var url = 'http://bandros.id/stok_api/catenzo.php?kode=';
+		var x = $("#isearch").val();
+		if(x.length<=2){
+			NProgress.done();
+			return false;
+		}
+		url = url+encodeURIComponent(x);
+		console.log(url);
+		$.get(url).done(function(d){
+			console.log(d);
+			var h = '';
+			if(d.result.length>0){
+				$.each(d.result,function(idx,val){
+					h += productList(val.image_url,val.kode,val.warna,val.bahan,val.berat,val.stok);
+				});
+			}else{
+				h+=empti();
+			}
+			$("#flexible_content").html(h);
+			jQuery("time.timeago").timeago();
+			$("img.mls").lazyload({
+					effect : "fadeIn"
+			});
+			NProgress.done();
+		})
+	}
+	function testFill(){
+		var jsx = {error: 0,result: [{no_urut: "463",kode: "ST 041",warna: "COKLAT",bahan: "CANVAS",berat: "0 gr",size_stok: "silahkan update aplikasinya",size_pesanan: "silahkan update aplikasinya",image_url: "https://katalog.kilatstorage.com/thumb/ctnz/ST 041.jpg",stok: [{ukuran: "All Size",stok: "30",pesanan: "0",last_update: "14 Apr 16, 11:07:58"}]}]};
+		console.log(jsx.result[0]);
+		var h ='';
+		h+= productList(jsx.result[0].image_url,jsx.result[0].kode,jsx.result[0].warna,jsx.result[0].bahan,jsx.result[0].berat,jsx.result[0].stok);
+		h+= productList(jsx.result[0].image_url,jsx.result[0].kode,jsx.result[0].warna,jsx.result[0].bahan,jsx.result[0].berat,jsx.result[0].stok);
+		$("#flexible_content").html(h);
+		jQuery("time.timeago").timeago();
+		$("img.lazy").lazyload({
+        event : "sporty"
+    });
+	}
+	$("#isearch").on("keyup",function(e){
+		e.preventDefault();
+		//alert("waha");
+		//doSearch();
+	});
+	$("#asearch").on("tap click",function(e){
+		e.preventDefault();
+		//alert("fuck");
+		doSearch();
+		//testFill();
+	});
+	$("#fsearch").on("submit",function(e){
+		e.preventDefault();
+		doSearch();
+	});
+});
+</script>
+</body>
+</html>
